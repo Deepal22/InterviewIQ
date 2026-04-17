@@ -13,7 +13,7 @@ import sessionRoutes from "./routes/sessionRoutes.js";
 const app = express();
 
 
-app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
+app.use(cors({ origin: true, credentials: true }));
 // middleware
 app.use(express.json());
 app.use(clerkMiddleware()); // this adds auth field to request object: req.auth()
