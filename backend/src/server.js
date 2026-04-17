@@ -13,14 +13,28 @@ import sessionRoutes from "./routes/sessionRoutes.js";
 
 const app = express();
 
-const __dirname = path.resolve();
+
+const allowedOrigins = [
+  process.env.CLIENT_URL,
+  "http://interview-iq-coral.vercel.app"
+];
 
 // middleware
 app.use(express.json());
 // credentials:true meaning?? => server allows a browser to include cookies on request
-app.use(cors({ origin: [ENV.CLIENT_URL,
-  "http://localhost:5173"], 
-  credentials: true }));
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true); // allow non-browser requests
+
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed"));
+    }
+  },
+  credentials: true
+}));
+
 app.use(clerkMiddleware()); // this adds auth field to request object: req.auth()
 
 app.use("/api/inngest", serve({ client: inngest, functions }));
