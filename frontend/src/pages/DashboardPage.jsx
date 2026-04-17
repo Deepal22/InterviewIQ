@@ -32,6 +32,10 @@ function DashboardPage() {
       {
         onSuccess: (data) => {
           setShowCreateModal(false);
+          if(!data?.session?._id){
+            console.error("Session ID missing: ", data);
+            return;
+          }
           navigate(`/session/${data.session._id}`);
         },
       }
