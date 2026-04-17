@@ -30,14 +30,13 @@ function DashboardPage() {
         difficulty: roomConfig.difficulty.toLowerCase(),
       },
       {
-       onSuccess: (data) => {
-          console.log("🔥 RESPONSE:", data);
+        onSuccess: (data) => {
           setShowCreateModal(false);
-          navigate(`/session/${data._id}`);
-          }
-        }
-    );  
-  };  
+          navigate(`/session/${data.session._id}`);
+        },
+      }
+    );
+  };
 
   const activeSessions = activeSessionsData?.sessions || [];
   const recentSessions = recentSessionsData?.sessions || [];
