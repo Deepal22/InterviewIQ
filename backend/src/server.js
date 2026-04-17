@@ -26,6 +26,10 @@ app.get("/health", (req, res) => {
   res.status(200).json({ msg: "api is up and running" });
 });
 
+app.get("/api/test", (req, res) => {
+  res.send("TEST WORKING");
+});
+
 // make our app ready for deployment
 app.get("/", (req, res) => {
   res.send("Backend is running");
