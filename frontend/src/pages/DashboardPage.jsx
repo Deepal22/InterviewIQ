@@ -32,7 +32,7 @@ function DashboardPage() {
       {
         onSuccess: (data) => {
           setShowCreateModal(false);
-          navigate(`/session/${data.session._id}`);
+          navigate(`/session/${data._id}`);
         },
       }
     );
