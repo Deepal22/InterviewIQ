@@ -27,13 +27,18 @@
 
 <img width="1902" height="910" alt="Screenshot 2026-04-18 160138" src="https://github.com/user-attachments/assets/c05d93bf-3373-449a-bdf6-ad689c965baf" />
 
+
 <img width="1919" height="913" alt="Screenshot 2026-04-18 160344" src="https://github.com/user-attachments/assets/66a9a814-b3c0-401a-88a7-01ae89d49f9d" />
+
 
 <img width="1919" height="910" alt="Screenshot 2026-04-18 160357" src="https://github.com/user-attachments/assets/c37e937e-7954-4a2a-9ec6-4fe8424bdf42" />
 
+
 <img width="1917" height="904" alt="Screenshot 2026-04-18 160829" src="https://github.com/user-attachments/assets/321cbfb4-14be-4d0e-892e-1a4b4c312d2e" />
 
+
 <img width="1919" height="909" alt="Screenshot 2026-04-18 160846" src="https://github.com/user-attachments/assets/f6dbb71a-5cd8-4960-9f4c-096e1f5b4bc1" />
+
 
 ## 🛠️ Tech Stack
 
